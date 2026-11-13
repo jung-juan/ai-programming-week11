@@ -15,7 +15,9 @@
 ## ③ 어떻게 쓰나요 (How)
 
 Windows 명령 프롬프트(cmd) 기준입니다. 저장소 폴더에서 한 줄씩 실행합니다.
-`python`이 실행되지 않으면 `py`로 바꿔서 입력합니다. (예: `py load_scores.py scores.csv`)
+`python --version`을 입력했을 때 `Python 3.14.7`처럼 버전 번호가 나오지 않고 `Python`만 나오거나 아무 일도 일어나지 않으면,
+진짜 파이썬이 아니라 Windows의 python 바로가기(Microsoft Store)가 실행된 것입니다.
+이때는 아래 모든 명령의 `python`을 `py`로 바꿔 입력합니다. (예: `py load_scores.py scores.csv`, `py -m pytest test_load_scores.py -q`)
 
 ```
 python --version
